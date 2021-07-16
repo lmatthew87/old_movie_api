@@ -7,7 +7,89 @@
         <p>We give a detailed list of what's hot and what's not and give you the real look into what movies you should and shouldn't be watching,<br>
           we bring you the Box Office Winners app to consolidate all your movie going information in one understandable and cohesive app.</p>
           <a href= <b>"DOWNLOAD TODAY"</b></a>
-          <tr>
-<td>Return a list of All movies to the user<td>
-</tr>
+          <div class="table-wrapper">
+             <table class="methods-table">
+               <thead>
+                 <th>Request</th>
+                 <th>URL</th>
+                 <th>Response</th>
+               </thead>
+               <tbody>
+                 <tr>
+                   <td>List all movies to user</td>
+                   <td>GET</td>
+                   <td>/movies</td>
+                   <td>List of all available movies with image and title</td>
+                 </tr>
+                 <tr>
+                   <td>Return available data about specific movie</td>
+                   <td>GET</td>
+                   <td>/movies/[movie title]</td>
+                   <td>
+                     A JSON object with movie title, cover art, description, genre,
+                     featured film, director, actors
+                   </td>
+                 </tr>
+                 <tr>
+                   <td>Return a list of movies by genre</td>
+                   <td>GET</td>
+                   <td>movies/[genre]</td>
+                   <td>Returns and a list of movies that match the specified genre</td>
+                 </tr>
+                 <tr>
+                   <td>Return Directors Bio</td>
+                   <td>GET</td>
+                   <td>/directors/[directors name]</td>
+                   <td>
+                     Gives information about specific director (bio, birth date, death
+                     year, featured work)
+                   </td>
+                 </tr>
+                 <tr>
+                   <td>Sign up a new user</td>
+                   <td>POST</td>
+                   <td>/users</td>
+                   <td>Allows a user to register a new account</td>
+                 </tr>
+                 <tr>
+                   <td>User login</td>
+                   <td>/</td>
+                   <td>/login</td>
+                   <td>User can login to their account</td>
+                 </tr>
+                 <tr>
+                   <td>View users info</td>
+                   <td>GET</td>
+                   <td>/users/[username]</td>
+                   <td>User can view their account details</td>
+                 </tr>
+                 <tr>
+                   <td>Delete account</td>
+                   <td>REMOVE</td>
+                   <td>/users/[username]</td>
+                   <td>Allows a user unregister and delete their account</td>
+                 </tr>
+                 <tr>
+                   <td>Update a users info</td>
+                   <td>PUT</td>
+                   <td>/users/[user-name]</td>
+                   <td>Update a users inforamtion</td>
+                 </tr>
+                 <tr>
+                   <td>Add to favorites</td>
+                   <td>POST</td>
+                   <td>/users/[username]/Movies/[MovieID]</td>
+                   <td>Adds a movie to the users Favorites list</td>
+                 </tr>
+                 <tr>
+                   <td>Remove from Favorites</td>
+                   <td>POST</td>
+                   <td>/users/[username]/Movies/remove/[MovieID]</td>
+                   <td>Removes a movie from the users favorites list</td>
+                 </tr>
+               </tbody>
+             </table>
+           </div>
+         </body>
+       </html>
           </body>
