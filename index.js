@@ -48,3 +48,6 @@ app.get('/secreturl', (req, res) => {
 app.listen(8080, () => {
   console.log('Your app is listening on port 8080.');
 });
+app.get('/Movies', (req, res) => {
+  res.send('Successful GET request returning data on all Movies');
+});
