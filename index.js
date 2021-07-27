@@ -1,3 +1,11 @@
+const mongoose = require('mongoose');
+const Models = require('./models.js');
+
+const Movies = Models.Movie;
+const Users = Models.User;
+
+mongoose.connect('mongodb://localhost:27017/boxoffice', { useNewUrlParser: true, useUnifiedTopology: true });
+
 const express = require('express');
 const app = express();
 
@@ -31,7 +39,7 @@ app.listen(8080, () => {
   console.log('Your app is listening on port 8080.');
 });
 const express = require('express'),
-  morgan = require('morgan');
+morgan = require('morgan');
 
 const app = express();
 
@@ -51,3 +59,5 @@ app.listen(8080, () => {
 app.get('/Movies', (req, res) => {
   res.send('Successful GET request returning data on all Movies');
 });
+let Movie = mongoose.model('Movie', movieSchema);
+let User = mongoose.model('User', userSchema);
