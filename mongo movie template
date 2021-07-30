@@ -1,0 +1,398 @@
+db.collectionName.find( [] )
+
+
+
+var movie2 = {
+  Title: 'The Lion King',
+  Description: 'This Disney animated feature follows the adventures of the young lion Simba.',
+  Genre: {
+    Name: 'Animated',
+    Description: 'Animation is a method in which pictures are manipulated to appear as moving images. In traditional animation, images are drawn or painted by hand on transparent celluloid sheets to be photographed and exhibited on film.'
+  },
+  Director: {
+    Name: 'Judd Apatow',
+    Bio: 'Judd Apatow is an American producer, writer, director, actor, and stand-up comedian.',
+    Birth: '1967',
+    Death: 'NA'
+  },
+  ImagePath: 'thelionking.png',
+  Featured: false
+}
+
+var movie5 = {
+  Title: 'Stuart Little',
+  Description: 'When the Littles go to an orphanage to adopt a new family member, a charming young mouse named Stuart is chosen.',
+  Genre: {
+    Name: 'Comedy',
+    Description: 'Comedy is a genre of film in which the main emphasis is on humor. These films are designed to make the audience laugh through amusement and most often work by exaggerating characteristics for humorous effect.'
+  },
+  Director: {
+    Name: 'Rob Minkoff',
+    Bio: 'Robert Ralph Minkoff is an American filmmaker. He is known for directing the double Academy Award–winning animated feature The Lion King, along with directing Stuart Little.',
+    Birth: '1962',
+    Death: 'N/A'
+  },
+  ImagePath: 'stuartlittle.png',
+  Featured: false
+}
+db.movies.insertOne(movie5)
+
+
+var movie3 = {
+  Title: 'The Haunted Mansion',
+  Description: 'A realtor and his wife and children are summoned to a mansion, which they soon discover is haunted, and while they attempt to escape, he learns an important lesson about the family he has neglected.',
+  Genre: {
+    Name: 'Comedy',
+    Description: 'Comedy is a genre of film in which the main emphasis is on humor. These films are designed to make the audience laugh through amusement and most often work by exaggerating characteristics for humorous effect.'
+  },
+  Director: {
+    Name: 'Rob Minkoff',
+    Bio: 'Robert Ralph Minkoff is an American filmmaker. He is known for directing the double Academy Award–winning animated feature The Lion King, along with directing Stuart Little.',
+    Birth: '1962',
+    Death: 'N/A'
+  },
+  ImagePath: 'thehauntedmansion.png',
+  Featured: true
+}
+db.movies.insertOne(movie3)
+
+var movie4 = {
+  Title: "Coraline",
+  Description: "An adventurous 11-year-old girl finds another world that is a strangely idealized version of her frustrating home, but it has sinister secrets.",
+  Genre: {
+    Name: "Animation",
+    Description: "Animation is a method in which pictures are manipulated to appear as moving images. In traditional animation, images are drawn or painted by hand on transparent celluloid sheets to be photographed and exhibited on film."
+  },
+  Director: {
+    Name: "Henry Selick",
+    Bio: "Henry Selick is a film director, specializing in films with stop-motion animation. He has formal training as an animator.",
+    Birth: "1952",
+    Death: "N/A"
+  },
+  ImagePath: "Coraline.png",
+  Featured: true
+}
+db.movies.insertOne(movie4)
+
+
+var movie10 = {
+  Title: "Twilight",
+  Description: "When Bella Swan moves to a small town in the Pacific Northwest, she falls in love with Edward Cullen, a mysterious classmate who reveals himself to be a 108-year-old vampire.",
+  Genre: {
+    Name: "Drama",
+    Description: "Stories with high stakes and a lot of conflicts."
+  },
+  Director: {
+    Name: "Catherine Hardwicke",
+    Bio: " She is a director and production designer, known for Twilight (2008), Thirteen (2003) and Lords of Dogtown (2005).",
+    Birth: "1955",
+    Death: "N/A"
+  },
+  ImagePath: "Twilight.png",
+  Featured: true
+}
+db.movies.insertOne(movie10)
+
+
+
+
+
+
+
+db.movies.find()
+
+
+
+
+
+[
+  {
+    _id: ObjectId("60fe222b0a657765eb92580c"),
+    Title: 'Coraline',
+    Description: 'An adventurous 11-year-old girl finds another world that is a strangely idealized version of her frustrating home, but it has sinister secrets.',
+    Genre: {
+      Name: 'Animation',
+      Description: 'Animation is a method in which pictures are manipulated to appear as moving images. In traditional animation, images are drawn or painted by hand on transparent celluloid sheets to be photographed and exhibited on film.'
+    },
+    Director: {
+      Name: 'Henry Selick',
+      Bio: 'Henry Selick is a film director, specializing in films with stop-motion animation. He has formal training as an animator.',
+      Birth: '1952',
+      Death: 'N/A'
+    },
+    ImagePath: 'Coraline.png',
+    Featured: true
+  },
+  {
+    _id: ObjectId("60fe20e30a657765eb925807"),
+    Title: 'Silence of the Lambs',
+    Description: 'A young FBI cadet must receive the help of an incarcerated and manipulative cannibal killer to help catch another serial killer.',
+    Genre: {
+      Name: 'Thriller',
+      Description: 'Thriller film, also known as suspense film or suspense thriller, is a broad film genre that involves excitement and suspense in the audience.'
+    },
+    Director: {
+      Name: 'Jonathan Demme',
+      Bio: 'Robert Jonathan Demme was an American director, producer, and screenwriter.',
+      Birth: '1944',
+      Death: '2017'
+    },
+    ImagePath: 'silenceofthelambs.png',
+    Featured: true
+  },
+  {
+    _id: ObjectId("60fe22140a657765eb925809"),
+    Title: 'Stuart Little',
+    Description: 'When the Littles go to an orphanage to adopt a new family member, a charming young mouse named Stuart is chosen.',
+    Genre: {
+      Name: 'Comedy',
+      Description: 'Comedy is a genre of film in which the main emphasis is on humor. These films are designed to make the audience laugh through amusement and most often work by exaggerating characteristics for humorous effect.'
+    },
+    Director: {
+      Name: 'Rob Minkoff',
+      Bio: 'Robert Ralph Minkoff is an American filmmaker. He is known for directing the double Academy Award–winning animated feature The Lion King, along with directing Stuart Little.',
+      Birth: '1962',
+      Death: 'N/A'
+    },
+    ImagePath: 'stuartlittle.png',
+    Featured: false
+  },
+  {
+    _id: ObjectId("60fe280c0a657765eb925810"),
+    Title: 'The Hunger Games',
+    Description: "Katniss Everdeen voluntarily takes her younger sister's place in the Hunger Games: a televised competition in which two teenagers from each of the twelve Districts of Panem are chosen at random to fight to the death.",
+    Genre: {
+      Name: 'Action',
+      Description: 'Action film is a film genre in which the protagonist or protagonists are thrust into a series of events that typically include violence, extended fighting, physical feats, rescues and frantic chases..'
+    },
+    Director: {
+      Name: 'Gary Ross',
+      Bio: "Gary Ross is an American film director, writer, and producer. He is best known for writing and directing the fantasy comedy-drama film Pleasantville (1998), the sports drama film Seabiscuit (2003), the sci-fi action film The Hunger Games (2012), and the heist comedy film Ocean's 8 (2018).",
+      Birth: '1956',
+      Death: 'N/A'
+    },
+    ImagePath: 'thehungergames.png',
+    Featured: true
+  },
+  {
+    _id: ObjectId("60fe290a0a657765eb925811"),
+    Title: 'Twilight',
+    Description: 'When Bella Swan moves to a small town in the Pacific Northwest, she falls in love with Edward Cullen, a mysterious classmate who reveals himself to be a 108-year-old vampire.',
+    Genre: {
+      Name: 'Drama',
+      Description: 'Stories with high stakes and a lot of conflicts.'
+    },
+    Director: {
+      Name: 'Catherine Hardwicke',
+      Bio: ' She is a director and production designer, known for Twilight (2008), Thirteen (2003) and Lords of Dogtown (2005).',
+      Birth: '1955',
+      Death: 'N/A'
+    },
+    ImagePath: 'Twilight.png',
+    Featured: true
+  },
+  {
+    _id: ObjectId("60fe21790a657765eb925808"),
+    Title: 'The Lion King',
+    Description: 'This Disney animated feature follows the adventures of the young lion Simba.',
+    Genre: {
+      Name: 'Animated',
+      Description: 'Animation is a method in which pictures are manipulated to appear as moving images. In traditional animation, images are drawn or painted by hand on transparent celluloid sheets to be photographed and exhibited on film.'
+    },
+    Director: {
+      Name: 'Judd Apatow',
+      Bio: 'Judd Apatow is an American producer, writer, director, actor, and stand-up comedian.',
+      Birth: '1967',
+      Death: 'NA'
+    },
+    ImagePath: 'thelionking.png',
+    Featured: false
+  },
+  {
+    _id: ObjectId("60fe25220a657765eb92580d"),
+    Title: 'The Avengers',
+    Description: "Earth's mightiest heroes must come together and learn to fight as a team if they are going to stop the mischievous Loki and his alien army from enslaving humanity.",
+    Genre: {
+      Name: 'Action',
+      Description: 'Action film is a film genre in which the protagonist or protagonists are thrust into a series of events that typically include violence, extended fighting, physical feats, rescues and frantic chases.'
+    },
+    Director: {
+      Name: 'Joss Whedon',
+      Bio: 'Joseph Hill Whedon is an American film and television director, producer, screenwriter, composer, and comic book writer.',
+      Birth: '1964',
+      Death: 'N/A'
+    },
+    ImagePath: 'TheAvengers.png',
+    Featured: true
+  },
+  {
+    _id: ObjectId("60fe22150a657765eb92580a"),
+    Title: 'The Haunted Mansion',
+    Description: 'A realtor and his wife and children are summoned to a mansion, which they soon discover is haunted, and while they attempt to escape, he learns an important lesson about the family he has neglected.',
+    Genre: {
+      Name: 'Comedy',
+      Description: 'Comedy is a genre of film in which the main emphasis is on humor. These films are designed to make the audience laugh through amusement and most often work by exaggerating characteristics for humorous effect.'
+    },
+    Director: {
+      Name: 'Rob Minkoff',
+      Bio: 'Robert Ralph Minkoff is an American filmmaker. He is known for directing the double Academy Award–winning animated feature The Lion King, along with directing Stuart Little.',
+      Birth: '1962',
+      Death: 'N/A'
+    },
+    ImagePath: 'thehauntedmansion.png',
+    Featured: true
+  },
+  {
+    _id: ObjectId("60fe27060a657765eb92580f"),
+    Title: 'the Wizard of Oz',
+    Description: 'Dorothy Gale is swept away from her home in Kansas to the magical Land of Oz in a tornado and embarks on a quest with her new friends to see the Wizard who can help her return home and help her friends as well.',
+    Genre: { Name: 'Adventure', Description: 'Feature elements of travel.' },
+    Director: {
+      Name: 'Victor Fleming',
+      Bio: "American filmmaker who was one of Hollywood's most popular directors during the 1930s. He was best known for his work on the 1939 classics Gone with the Wind and The Wizard of Oz.",
+      Birth: '1889',
+      Death: '1949'
+    },
+    ImagePath: 'Thewizardofoz.png',
+    Featured: true
+  },
+  {
+    _id: ObjectId("60fe261a0a657765eb92580e"),
+    Title: 'The Conjuring',
+    Description: 'Paranormal investigators Ed and Lorraine Warren work to help a family terrorized by a dark presence in their farmhouse.',
+    Genre: {
+      Name: 'Horror',
+      Description: 'Unsettling films designed to frighten and panic, cause dread and alarm.'
+    },
+    Director: {
+      Name: 'James Wan',
+      Bio: 'He is a Malaysian - born Australian producer, screenwriter, and film director of Chinese heritage.',
+      Birth: '1977',
+      Death: 'N/A'
+    },
+    ImagePath: 'TheConjuring.png',
+    Featured: true
+  }
+]
+
+
+var user1 = {
+  Name: "davidcohen2580",
+  Password: "test123",
+  Email: "davidcohen2580@gmail.com",
+  Birthdate: "09/10/1988",
+  Birthday: new Date("1988-09-10"),
+  Favorite: [
+    ObjectId("60fe27060a657765eb92580f"), ObjectId("60fe21790a657765eb925808")
+  ]
+}
+db.users.insertOne(user1)
+var user2 = {
+  Name: "larissamayer",
+  Password: "password555",
+  Email: "larissalove@yahoo.com",
+  Birthdate: "05/04/1995",
+  Birthday: new Date("1995-05-04"),
+  Favorite: [
+    ObjectId("60fe25220a657765eb92580d"), ObjectId("60fe21790a657765eb925808")
+  ]
+}
+db.users.insertOne(user2)
+ var user3 = {
+ Name: "Michael Scott",
+ Password: "password125",
+ Email: "MichaelScott@aol.com",
+ Birthdate: "12/06/2000",
+ Birthday: new Date("2000-12-6"),
+ Favorite: [
+  ObjectId("60fe261a0a657765eb92580e")
+ ]
+}
+db.users.insertOne(user3)
+var user4 = {
+Name: "Jessica Keening",
+Password: "DontForget53",
+Email: "JKeening@hotmail.com",
+Birthdate: "06/25/1999",
+Birthday: new Date("1999-06-25"),
+Favorite: [
+ObjectId("60fe290a0a657765eb925811"),  ObjectId("60fe21790a657765eb925808")
+]
+}
+db.users.insertOne(user4)
+var user5 = {
+Name: "Sandra Cutless",
+Password: "pokemonAPI",
+Email: "pikachu55@outlook.com",
+Birthdate: "05/09/1965",
+Birthday: new Date("1965-05-09"),
+Favorite: [
+ObjectId("60fe290a0a657765eb925811")
+]
+}
+db.users.insertOne(user5)
+
+
+
+
+
+
+[
+  {
+    _id: ObjectId("60fe445f4a380842466dbf32"),
+    Name: 'davidcohen2580',
+    Password: 'test123',
+    Email: 'davidcohen2580@gmail.com',
+    Birthdate: '09/10/1988',
+    Birthday: ISODate("1988-09-10T00:00:00.000Z"),
+    Favorite: [
+      ObjectId("60fe27060a657765eb92580f"),
+      ObjectId("60fe21790a657765eb925808")
+    ]
+  },
+  {
+    _id: ObjectId("60fe44604a380842466dbf33"),
+    Name: 'larissamayer',
+    Password: 'password555',
+    Email: 'larissalove@yahoo.com',
+    Birthdate: '05/04/1995',
+    Birthday: ISODate("1995-05-04T00:00:00.000Z"),
+    Favorite: [
+      ObjectId("60fe25220a657765eb92580d"),
+      ObjectId("60fe21790a657765eb925808")
+    ]
+  },
+  {
+    _id: ObjectId("60fe44604a380842466dbf34"),
+    Name: 'Michael Scott',
+    Password: 'password125',
+    Email: 'MichaelScott@aol.com',
+    Birthdate: '12/06/2000',
+    Birthday: ISODate("2000-12-06T08:00:00.000Z"),
+    Favorite: [ ObjectId("60fe261a0a657765eb92580e") ]
+  },
+  {
+    _id: ObjectId("60fe44604a380842466dbf35"),
+    Name: 'Jessica Keening',
+    Password: 'DontForget53',
+    Email: 'JKeening@hotmail.com',
+    Birthdate: '06/25/1999',
+    Birthday: ISODate("1999-06-25T00:00:00.000Z"),
+    Favorite: [
+      ObjectId("60fe290a0a657765eb925811"),
+      ObjectId("60fe21790a657765eb925808")
+    ]
+  },
+  {
+    _id: ObjectId("60fe469c4a380842466dbf37"),
+    Name: 'Sandra Cutless',
+    Password: 'pokemonAPI',
+    Email: 'pikachu55@outlook.com',
+    Birthdate: '05/09/1965',
+    Birthday: ISODate("1965-05-09T00:00:00.000Z"),
+    Favorite: [
+      ObjectId("60fe290a0a657765eb925811"),
+      ObjectId("60fe22150a657765eb92580a")
+    ]
+  }
+]
